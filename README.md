@@ -1,34 +1,28 @@
-JUnique - Helps in preventing multiple instances of the same application
-========================================
+# JUnique 
 
-Instructions
-------------
-Unzip.
+Helps in preventing multiple instances of the same application. Fork of: [JUnique](http://www.sauronsoftware.it/projects/junique/). Source code was left unchanged, only build system was replaced.
 
-Add the JUnique JAR to your application CLASSPATH and enjoy it.
+# Using in your own project
 
-Supported platforms: Java 2 version 1.2 or later
+Add the repository to your repositories section:
+```groovy
+repositories {
+    maven {
+        url = uri('https://maven.pkg.github.com/tomasz-herman/JUnique')
+        credentials {
+            username = "token"
+            password = "\u0033\u0038\u0038\u0063\u0034\u0034\u0062\u0039\u0037\u0034\u0032\u0035\u0065\u0061\u0036\u0065\u0064\u0066\u0031\u0065\u0030\u0033\u0039\u0032\u0066\u0063\u0064\u0031\u0064\u0065\u0031\u0039\u0036\u0039\u0038\u0064\u0064\u0039\u0039\u0061"
+        }
+    }
+}
+```
+Then add the dependency:
+```groovy
+dependencies {
+    implementation 'it.sauronsoftware:junique:1.0.4'
+}
+```
 
+# License
 
-Documentation
--------------
-Developer quickstart guide in doc/manual-en.html (for Italian manual-it.html)
-
-API documentation in doc/api/index.html
-
-Working code examples in examples
-
-
-How to build
-------------
-See BUILD.txt
-
-
-License
--------
-See LICENSE.txt
-
-
-Changelog
----------
-See CHANGELOG.txt
+JUnique is **Free Software** and it is licensed under **LGPL**.
