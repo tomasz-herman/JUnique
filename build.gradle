@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.paide'
+group = 'it.sauronsoftware'
 version = '1.0.4'
 sourceCompatibility = '8'
 
@@ -20,7 +20,7 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
-            groupId 'com.hermant'
+            groupId 'it.sauronsoftware'
             artifactId 'junique'
             from(components.java)
         }
